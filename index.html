@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Searching for Birds – Data Visualization Analysis</title>
+    <style>
+      body {
+        font-family: Arial;
+        margin: 40px;
+        line-height: 1.6;
+      }
+      h1,
+      h2 {
+        color: #222;
+      }
+      img {
+        max-width: 100%;
+        margin: 15px 0;
+        border-radius: 8px;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Searching for Birds – Critical Data Visualization Analysis</h1>
+
+    <p>
+      Visualization Source:
+      <a href="https://searchingforbirds.visualcinnamon.com/" target="_blank">
+        Searching for Birds
+      </a>
+    </p>
+
+    <section>
+      <h2>Purpose</h2>
+      <p>
+        The purpose of this visualization is to explore how public interest in
+        birds is reflected through Google search behavior. It connects human
+        curiosity with real-world bird species, showing which birds people
+        search for, when they search for them, and how interest varies
+        geographically and seasonally.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data</h2>
+      <p>
+        The visualization primarily uses Google Trends data, which measures
+        relative search interest over time. This is combined with bird-related
+        datasets such as species classification and observational data from
+        sources like eBird.
+      </p>
+      <p>The data is collected from:</p>
+      <ul>
+        <li>Google search queries (aggregated and normalized)</li>
+        <li>Bird species databases (taxonomy and classification)</li>
+        <li>Observation datasets (e.g., bird sightings)</li>
+      </ul>
+
+      <p>
+        Because Google Trends data is normalized, it does not represent absolute
+        search volume but rather relative popularity.
+      </p>
+    </section>
+
+    <section>
+      <h2>Target Users</h2>
+      <p>This visualization is designed for a broad audience:</p>
+      <ul>
+        <li>General public exploring interesting data stories</li>
+        <li>Bird enthusiasts and hobbyists</li>
+        <li>Students and educators</li>
+        <li>Data visualization designers and researchers</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Questions & Insights</h2>
+
+      <p>
+        Users can explore and answer several questions using this visualization:
+      </p>
+
+      <ul>
+        <li>Which bird species are most searched in the U.S.?</li>
+        <li>How does search interest change over time?</li>
+        <li>Which birds are popular in different regions?</li>
+        <li>Do seasonal patterns affect search behavior?</li>
+      </ul>
+
+      <p>These questions are answered through interaction:</p>
+
+      <ul>
+        <li>Hovering reveals detailed data about specific birds</li>
+        <li>Scrolling progresses through a narrative story</li>
+        <li>
+          Zooming into visual elements (like the “egg” structure) reveals deeper
+          levels of detail
+        </li>
+      </ul>
+
+      <h3>Example Insights</h3>
+      <ul>
+        <li>
+          Search interest peaks during migration seasons (spring and fall)
+        </li>
+
+        <img src="migration.png" style="width: 70%" />
+
+        <li>Rare birds generate spikes in search activity</li>
+        <li>
+          Large or visually striking birds (eagles, hawks) dominate search
+          trends
+        </li>
+        <li>Only a subset of bird species receive significant attention</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Design & Interaction Analysis</h2>
+
+      <h3>What Works Well</h3>
+      <ul>
+        <li>
+          Storytelling approach makes complex data engaging and easy to follow
+        </li>
+        <li>Creative visuals (eggs, nests) make the visualization memorable</li>
+        <li>Hover and zoom interactions encourage exploration</li>
+        <li>Smooth transitions guide users through the narrative</li>
+      </ul>
+
+      <img
+        src="overview.png"
+        alt="Overview of visualization"
+        style="width: 60%"
+      />
+      <img
+        src="species.png"
+        alt="Detailed interaction view"
+        style="width: 60%"
+      />
+      <img
+        src="population_interest.png"
+        alt="Detailed interaction view"
+        style="width: 60%"
+      />
+
+      <h3>What Could Be Improved</h3>
+      <ul>
+        <li>
+          The artistic design can sometimes reduce clarity for first-time users
+        </li>
+        <li>Heavy reliance on scrolling may make navigation slower</li>
+        <li>
+          Some interactions are not immediately obvious (discoverability issue)
+        </li>
+      </ul>
+
+      <p>
+        Improvements could include adding clearer instructions, a
+        mini-map/navigation bar, and optional simplified views for users who
+        prefer traditional charts.
+      </p>
+    </section>
+
+    <section>
+      <h2>Limitations</h2>
+      <ul>
+        <li>
+          Google Trends data does not represent actual bird populations or
+          sightings
+        </li>
+        <li>
+          Search terms may be ambiguous (e.g., bird names used in other
+          contexts)
+        </li>
+        <li>Limited to users who actively interact with the visualization</li>
+        <li>Not designed for precise quantitative analysis</li>
+      </ul>
+
+      <p>
+        The visualization is more effective as an exploratory storytelling tool
+        rather than a precise analytical dashboard.
+      </p>
+    </section>
+  </body>
+</html>
